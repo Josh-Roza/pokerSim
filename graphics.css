@@ -1,0 +1,57 @@
+body {
+    background-color:lightgrey;
+}
+h1 {
+    color:indigo;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 300%;
+    padding: 10px;
+}
+h3 {
+    color:indigo;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 300%;
+    padding: 2px;
+}
+a {
+    color:indigo;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 110%;
+    padding: 20px;
+}
+hr {
+    border: 2px solid indigo;
+}
+p {
+    color:indigo;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1px;
+    margin-top: 1px;
+    font-size: 120%;
+    padding-left: 10px;
+}
+pre {
+    color:indigo;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    padding-top: 1px;
+    font-size: 90%;
+    padding-left:40px;
+}
+#intro {
+    color:indigo;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    padding-top: 1px;
+    font-size: 120%;
+    padding-left:10px;
+}
+#tankPicture {
+    width: 40%;
+    height: 40%
+}
+label{
+    color:indigo;
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 150%;
+}
