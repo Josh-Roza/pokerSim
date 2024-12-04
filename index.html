@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texas Hold em Poker Simulator</title>
+    <link rel="stylesheet" href="graphics.css">
+    
+</head>
+<body>
+   
+    <h3 id="pokerHeader">Texas Hold'em Poker Odds Simulator</h3>
+    <form>
+        <label for="suit1">Selects the suit for first card:</label>
+        <select name="suit1" id="suit1" required>
+            <option value="spade">Spades</option>
+            <option value="heart">Hearts</option>
+            <option value="diamond">Diamonds</option>
+            <option value="club">Clubs</option>
+        </select>
+        
+        <label for="card1">Select the number for the first card:</label>
+        <select name="card1" id="card1" required>
+            <option value="1">Ace</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">Jack</option>
+            <option value="12">Queen</option>
+            <option value="13">King</option>
+        </select>
+        <br>
+        <label for="suit2">Selects the suit for second card:</label>
+        <select name="suit2" id="suit2" required>
+            <option value="heart">Hearts</option>
+            <option value="spade">Spades</option>
+            <option value="diamond">Diamonds</option>
+            <option value="club">Clubs</option>
+        </select>
+
+        <label for="card2">Select the number for the second card:</label>
+        <select name="card2" id="card2" required>
+            <option value="1">Ace</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">Jack</option>
+            <option value="12">Queen</option>
+            <option value="13">King</option>
+        </select>
+        
+        <br>
+        <label for="simLength">How many times should the simulation run?</label>
+        <select name="simLength" id="simLength">
+            <option value="1000">1000</option>
+            <option value="10000">10,000</option>
+            <option value="100000">100,000</option>
+        </select>
+        <br>
+        <button type="button" id="submit">Submit</button>
+    </form>
+    <br>
+    <p>These include combinations available to everyone:</p>
+    <p id="pairs">Pairs:</p>
+    <p id="2pairs">2 Pairs:</p>
+    <p id="3kind">3 of a Kinds:</p>
+    <hr>
+    <p>These only include combinations with one or both cards from the hand:</p>
+    <p id="uniquepairs">Pairs:</p>
+    <p id="unique2pairs">2 Pairs:</p>
+    <p id="unique3kind">3 of a Kinds:</p>
+    <hr>
+    <p>These include combinations available to everyone but are much rarer so the effect is negligible:</p>
+    <p id="flushes">Flushes:</p>
+    <p id="straights">Straights:</p>
+    <p id="fullhouses">Full Houses:</p>
+    <p id="quads">Quads:</p>
+    <p id="straightflushes">Straight Flushes:</p>
+    <p id="royalflushes">Royal Flushes:</p>
+
+    <script src="PokerOdds.js"></script> 
+</body>
+</html>
