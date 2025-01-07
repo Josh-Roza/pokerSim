@@ -355,8 +355,12 @@ twoPairBefore = 0;
 
 }
 function go(){
+    if (document.getElementById("suit1").value === document.getElementById("suit2").value && parseInt(document.getElementById("card1").value) === parseInt(document.getElementById("card2").value)){
+        document.getElementById("pokerHeader").innerHTML = "You must select different cards.";
+    } else {
     textUpdate();
     setTimeout(sim, 500);
+    }
 }
 
 submitButton.addEventListener("click",go);
